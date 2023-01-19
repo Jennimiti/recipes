@@ -1,0 +1,81 @@
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link href="style.css" rel="stylesheet">
+    <title>Jenni's Rezept: Kingdom Hearts - Seasalt Icecream</title>
+</head>
+<body>
+    <div>
+        <h1 id="recipeName"></h1>
+        <label for="recipePortions">Portionen</label>
+        <br>
+        <input id="recipePortions" type="number" min="1" max="100">
+
+        <h2>Zutaten</h2>
+        <ul id="recipeIngredients">
+
+        </ul>
+        <h2>Anweisungen</h2>
+        <ol id="recipeInstructions"></ol>
+    </div>
+    <script src="./calculator.js"></script>
+    <script>
+        loadRecipe({
+            name: "Kingdom Hearts - Seasalt Icecream",
+            portions: 8,
+            ingredients: [
+                {
+                    name: "Milch",
+                    unit: "ml",
+                    amount: 500
+                },
+                {
+                    name: "Sahne",
+                    unit: "ml",
+                    amount: 500
+                },
+                {
+                    name: "Maisstärke",
+                    unit: "EL",
+                    amount: 4
+                },
+                {
+                    name: "Glucose",
+                    unit: "g",
+                    amount: 300
+                },
+                {
+                    name: "Salz",
+                    unit: "TL",
+                    amount: 1.5
+                },
+                {
+                    name: "Gelatine",
+                    unit: "Blatt",
+                    amount: 4
+                },
+                {
+                    name: "Vanille",
+                    unit: null,
+                    amount: null
+                },
+                {
+                    name: "Cyan Lebensmittelfarbe",
+                    unit: null,
+                    amount: null
+                },
+            ],
+            instructions: [
+                "Combine milk and cream in a bowl. Pour in about 1 cup of that mixture in a separate bowl and add 3 Tbsp of cornstarch. To the cornstarch mixture add in a packet of gelatin and whisk until fully hydrated.",
+                "Add about 7 ½ ounces of glucose to remaining milk and cream mixture on stovetop at medium-low until it dissolves completely before adding thickeners.",
+                "Add cornstarch mixture and let simmer for a minute, then add 1 tsp sea salt as it finishes thickening. Strain into heat-proof bowl. Add and whisk together gel based teal food coloring.",
+                "After that’s done, pour into a piping bag in order to cleanly fill popsicle molds. Use stick alignment to assure sticks stand up straight, and in the freezer it goes for at least 6 hours up to overnight.",
+                "Run under hot water to easily take out popsicles and enjoy!"
+            ]
+        })
+    </script>
+</body>
+</html>
