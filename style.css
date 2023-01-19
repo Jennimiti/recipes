@@ -3,6 +3,7 @@ body {
     flex-direction: column;
     padding: 70px;
     background-color: burlywood;
+    font-family: "Quicksand";
 }
 
 h1,
