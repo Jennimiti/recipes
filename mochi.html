@@ -1,0 +1,60 @@
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link href="style.css" rel="stylesheet">
+    <title>Jenni's Rezept: Kingdom Hearts - Seasalt Icecream</title>
+</head>
+<body>
+    <div>
+        <h1 id="recipeName"></h1>
+        <label for="recipePortions">Portionen</label>
+        <br>
+        <input id="recipePortions" type="number" min="1" max="100">
+
+        <h2>Zutaten</h2>
+        <ul id="recipeIngredients">
+
+        </ul>
+        <h2>Anweisungen</h2>
+        <ol id="recipeInstructions"></ol>
+    </div>
+    <script src="./calculator.js"></script>
+    <script>
+
+        loadRecipe({
+            name: "Mochi",
+            portions: 4,
+            ingredients: [
+                {
+                    name: "Reismehl",
+                    unit: "g",
+                    amount: 50
+                },
+                {
+                    name: "Zucker",
+                    unit: "El",
+                    amount: 2
+                },
+                {
+                    name: "Stärke",
+                    unit: null,
+                    amount: null
+                },
+               
+            ],
+            instructions: [
+                "Vermischen Sie Reismehl und Zucker gut.",
+                "Fügen Sie dann noch das Wasser hinzu und vermengen sie es solange bis es keine Klümpchen mehr gibt.",
+                "Wenn bis jetzt alles gut gegangen ist (:, stellen Sie ein Wasserbad auf und bedecken die Schüssel mit der Mochimasse. Das dauert dann ca. 15 Minuten",
+                "Wenns fertig ist, kurz abkühlen lassen (Vorsicht heiß) und auf einer mit Stärke bemehlten Fläche nochmal kurz kneten",
+                "Dann einfach in Kügelchen formen und genießen. (;"
+            ]
+        })
+    </script>
+    <a href="default.asp">
+        <img src="https://www.allrecipes.com/thmb/cgyIIw7Ti-9RNQfMQkUWHsgBYEI=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/193307-easy-mochi-DOTDASH-MEREDITH-FOOD-STUDIOS-1x1-1-2c12097fbd354a6ab766fe4f9b725cde.jpg" alt="HTML tutorial" style="width: 450px;px;height: 300px;px;">
+</body>
+</html>
