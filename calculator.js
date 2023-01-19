@@ -22,9 +22,8 @@ function renderRecipe(recipe) {
     // render ingredients
     document.getElementById("recipeIngredients").innerHTML = formatList(
         recipe.ingredients.map(function(ingredient) {
-            return ingredient.name + " " + 
-            (ingredient.amount ?? "") + " " + 
-            (ingredient.unit ?? "")
+            return '<span class="ingredient-amount">' + (ingredient.amount ?? "") + " " + 
+            (ingredient.unit ?? "") + '</span><span class="ingredient-name">' + ingredient.name + "</span>"
         })
     )
 

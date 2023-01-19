@@ -1,16 +1,26 @@
 body {
-    display: flex; flex-direction: column; padding: 70px; background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+    background-color: burlywood;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: #A52;
     font-weight: 800;
 }
+
 h1 {
-    font-size: 2.5em;
+    font-size: 3rem;
 }
 
 h2 {
-    font-size: 2;
+    font-size: 2rem;
 }
 
 .flex-container {
@@ -25,8 +35,21 @@ h2 {
     padding-left: 20px;
     padding-right: 20px;
     font-size: 20px;
+    flex-grow: 1;
 }
 
-.flex-max-size {
-    flex-grow: 1;
+.flex-static {
+    flex-grow: 0 !important;
+}
+
+.center {
+    text-align: center;
+}
+
+#recipeIngredients li {
+    display: flex;
+}
+
+#recipeIngredients li .ingredient-amount {
+    width: 6em;
 }
