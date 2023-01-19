@@ -1,4 +1,5 @@
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,34 +8,38 @@
     <link href="style.css" rel="stylesheet">
     <title>Jenni's Rezept: Kingdom Hearts - Seasalt Icecream</title>
 </head>
+
 <body>
     <div>
-        <h1 id="recipeName"></h1>
+        <div class="flex-container">
+            <div>
+                <h1 id="recipeName"></h1>
         <label for="recipePortions">Portionen</label>
         <br>
         <input id="recipePortions" type="number" min="1" max="100">
-
+            </div>
+        </div>
         <h2>Zutaten</h2>
-    <div class="flex-container">
-        <div>
-        <ul id="recipeIngredients">
-            <li>
-                <span>500 ml</span><span>Milch</span>
-            </li>
-        </ul>
+        <div class="flex-container">
+            <div>
+                <ul id="recipeIngredients">
+                </ul>
+            </div>
+            <img src="https://www.allrecipes.com/thmb/cgyIIw7Ti-9RNQfMQkUWHsgBYEI=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/193307-easy-mochi-DOTDASH-MEREDITH-FOOD-STUDIOS-1x1-1-2c12097fbd354a6ab766fe4f9b725cde.jpg"
+            alt="HTML tutorial">
+    
         </div>
-        <div class="flex-static">
-            <img src="https://pbs.twimg.com/media/EunZmKwXYAAKyOY.jpg" style="height:300px; width:300px;object-fit:cover">
-        </div>
-    </div>
         <h2>Anweisungen</h2>
+        <div class="flex-container"><div>
         <ol id="recipeInstructions"></ol>
+</div></div>
     </div>
     <script src="./calculator.js"></script>
     <script>
         loadRecipe({
             name: "Kingdom Hearts - Seasalt Icecream",
             portions: 8,
+            image: "https://pbs.twimg.com/media/EunZmKwXYAAKyOY.jpg",
             ingredients: [
                 {
                     name: "Milch",
@@ -87,4 +92,5 @@
         })
     </script>
 </body>
+
 </html>
