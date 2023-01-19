@@ -38,6 +38,13 @@ h2 {
     flex-grow: 1;
 }
 
+.flex-container img {
+    flex-grow: 0 !important;
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+}
+
 .flex-static {
     flex-grow: 0 !important;
 }
