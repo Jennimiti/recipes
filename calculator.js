@@ -41,7 +41,7 @@ function convertIngredientAmounts(recipe, multiplier) {
         return {
             name: ingredient.name,
             unit: ingredient.unit,
-            amount: amount
+            amount: Math.round(amount)
         }
     })
     return {
