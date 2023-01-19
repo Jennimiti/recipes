@@ -11,48 +11,36 @@
 </style>
 
 <body>
-    <div class="flex-container">
-        <div>
-            <h1>Baileys-Kugeln</h1>
+    <div>
+        <div class="flex-container">
+            <div>
+                <h1 id="recipeName"></h1>
+        <label for="recipePortions">Portionen</label>
+        <br>
+        <input id="recipePortions" type="number" min="1" max="100">
+            </div>
         </div>
+        <h2>Zutaten</h2>
+        <div class="flex-container">
+            <div>
+                <ul id="recipeIngredients">
+                </ul>
+            </div>
+            <img src="https://www.allrecipes.com/thmb/cgyIIw7Ti-9RNQfMQkUWHsgBYEI=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/193307-easy-mochi-DOTDASH-MEREDITH-FOOD-STUDIOS-1x1-1-2c12097fbd354a6ab766fe4f9b725cde.jpg"
+            alt="HTML tutorial">
+    
+        </div>
+        <h2>Anweisungen</h2>
+        <div class="flex-container"><div>
+        <ol id="recipeInstructions"></ol>
+</div></div>
     </div>
-    <h2>Zutaten</h2>
-    <div class="flex-container">
-        <div class="flex-static">
-            500g<br />
-            240g<br />
-            800g<br />
-            280g<br />
-            120g<br />
-        </div>
-        <div>
-            Butterkekse<br />
-            Butter<br />
-            Weiße Schokolade<br />
-            Baileys<br />
-            Kakaopulver<br />
-        </div>
-        <img src="https://www.haco.de/wp-content/uploads/2020/11/beileys-pralinen.jpg">
-    </div>
-    <h2>Zubereitung</h2>
-    <div class="flex-container">
-        <div>
-            <ol>
-                <li>Butterkekse zerbröseln - Am besten in einer verschließbaren Plastiktüte.</li>
-                <li>Die Butter und die Schokolade in einem Wasserbad zum Schmelzen bringen, den Baileys dazugeben und zu einer homogenen Masse umrühren.</li>
-                <li>Die Masse abkühlen lassen und die zerbröselten Kekse unterrühren.</li>
-                <li>Die Masse für mindestens eine Stunde kaltstellen</li>
-                <li>Dann mithilfe von Esslöffeln kleine Kugeln formen und in Kakaopulver wälzen.</li>
-                <li>Die Baileys-Kugeln im Kühlschrank aufbewahren und jederzeit genießen.</li>
-            </ol>
-        </div>
-    </div>
-
     <script src="./calculator.js"></script>
     <script>
         loadRecipe({
             name: "Baileys Kugeln",
             portions: 15,
+            image: "https://www.haco.de/wp-content/uploads/2020/11/beileys-pralinen.jpg",
             ingredients: [
                 {
                     name: "Butterkekse",
