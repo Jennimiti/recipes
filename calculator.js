@@ -19,6 +19,10 @@ function renderRecipe(recipe) {
     //fill Input mit Portionen
     document.getElementById("recipePortions").value = recipe.portions
 
+    //Render Image
+    document.getElementById("recipeImage").src = recipe.image
+    document.getElementById("recipeImage").alt = recipe.name
+
     // render ingredients
     document.getElementById("recipeIngredients").innerHTML = formatList(
         recipe.ingredients.map(function(ingredient) {
@@ -36,12 +40,12 @@ function renderRecipe(recipe) {
 function convertIngredientAmounts(recipe, multiplier) {
     var convertedIngredients = recipe.ingredients.map(function (ingredient) {
         const amount = ingredient.amount != null 
-            ? ingredient.amount / recipe.portions * multiplier 
+            ? Math.round(ingredient.amount / recipe.portions * multiplier) 
             : null
         return {
             name: ingredient.name,
             unit: ingredient.unit,
-            amount: Math.round(amount)
+            amount: amount
         }
     })
     return {
